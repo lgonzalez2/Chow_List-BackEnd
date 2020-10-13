@@ -5,7 +5,7 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* To Start: type "rails s -p 3001" into console
 
 * System dependencies
 

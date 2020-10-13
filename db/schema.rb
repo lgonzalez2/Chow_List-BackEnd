@@ -51,11 +51,9 @@ ActiveRecord::Schema.define(version: 2020_10_07_231750) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
     t.string "username"
     t.string "photo"
-    t.string "password"
+    t.string "password_digest"
     t.string "bio"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
