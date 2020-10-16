@@ -1,12 +1,12 @@
 class UsersController < ApplicationController
     def index
         users = User.all
-        render json: users, only: [:id, :username, :password, :photo, :bio]
+        render json: users, only: [:id, :username, :password, :photo, :bio], include: [:restaurants]
     end
 
     def show
         user = User.find(params[:id])
-        render json: user
+        render json: { id: user.id, username: user.username, photo: user.photo, bio: user.bio, favorite_restaurants: user.restaurants }
     end
 
     def update 
