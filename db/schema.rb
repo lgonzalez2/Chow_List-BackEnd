@@ -34,8 +34,7 @@ ActiveRecord::Schema.define(version: 2020_10_07_231750) do
     t.string "image"
     t.string "website"
     t.string "price_level"
-    t.string "description"
-    t.float "rating"
+    t.string "rating"
     t.integer "location_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
