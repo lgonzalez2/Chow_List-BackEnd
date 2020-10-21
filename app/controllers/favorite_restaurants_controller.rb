@@ -25,4 +25,8 @@ class FavoriteRestaurantsController < ApplicationController
         end 
 
     end
+
+    def destroy 
+        FavoriteRestaurant.destroy([params[:id]])
+    end 
 end

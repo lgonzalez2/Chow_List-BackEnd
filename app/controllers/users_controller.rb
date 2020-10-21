@@ -6,7 +6,7 @@ class UsersController < ApplicationController
 
     def show
         user = User.find(params[:id])
-        render json: { id: user.id, username: user.username, photo: user.photo, bio: user.bio, favorite_restaurants: user.restaurants }
+        render json: { id: user.id, username: user.username, photo: user.photo, bio: user.bio, restaurants: user.restaurants , favorite_restaurants: user.favorite_restaurants}
     end
 
     def update 

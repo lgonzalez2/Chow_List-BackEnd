@@ -1,12 +1,12 @@
 class RestaurantsController < ApplicationController
     def index
         restaurants = Restaurant.all
-        render json: restaurants, only: [:id, :name, :image, :website, :price_level, :rating], include: [:location]
+        render json: restaurants, only: [:id, :name, :image, :website, :price_level, :rating], include: [:location, :favorite_restaurants]
     end
 
     def show
         restaurant = Restaurant.find(params[:id])
-        render json: restaurant
+        render json: {id: restaurant.id, name: restaurant.name, image: restaurant.image, website: restaurant.website, price_level: restaurant.price_level, rating: restaurant.rating, favorite_restaurants: restaurant.favorite_restaurants}
     end
 
     def create 
