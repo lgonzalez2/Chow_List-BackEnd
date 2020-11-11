@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origin 'http://localhost:3000'
+    origins 'http://localhost:3000'
 
     resource '*',
       headers: :any,
@@ -25,7 +25,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
   # end
 
   allow do
-    origin 'https://chow-list.netlify.app/'
+    origins 'https://chow-list.netlify.app/'
 
     resource '*',
       headers: :any,
