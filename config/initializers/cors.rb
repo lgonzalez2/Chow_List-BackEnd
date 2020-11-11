@@ -25,7 +25,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
   end
 
   allow do
-    origin 'https://eloquent-euclid-ec101f.netlify.app/'
+    origin 'https://chow-list.netlify.app/'
 
     resource '*',
       headers: :any,
