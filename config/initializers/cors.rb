@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'http://localhost:3000'
+    origin 'http://localhost:3000'
 
     resource '*',
       headers: :any,
@@ -16,7 +16,16 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
   end
   # for other domain origins******
   allow do
-    origins 'https://chow-list.herokuapp.com/'
+    origin 'https://chow-list.herokuapp.com/'
+
+    resource '*',
+      headers: :any,
+      methods: [:get, :post, :put, :patch, :delete, :options, :head],
+      credentials: true
+  end
+
+  allow do
+    origin 'https://eloquent-euclid-ec101f.netlify.app/'
 
     resource '*',
       headers: :any,
