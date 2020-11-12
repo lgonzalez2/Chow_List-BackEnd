@@ -1,24 +1,21 @@
-This is the ReadMe for Chow_List
+## Requirements
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### 1. Before starting, make sure you have a compantible version of ruby installed. This backend was built using:
 
-Things you may want to cover:
+      ruby 2.6.1
 
-* To Start: type "rails s -p 3001" into console
 
-* System dependencies
+### 2. Make sure you have all gem dependencies installed by running the following from the command line:
 
-* Configuration
+    bundle install
 
-* Database creation
+### 4. In order to locally set up the web app, run the following lines from the command line:
 
-* Database initialization
+    rails db:create
+    rails db:migrate
 
-* How to run the test suite
+### 5. Lastly, to finally start the server, run the following from the command line:
 
-* Services (job queues, cache servers, search engines, etc.)
+    rails s -p 3001
 
-* Deployment instructions
-
-* ...
+### 5. Front end is good to go at this point.
