@@ -1,6 +1,6 @@
 ## Requirements
 
-### 1. Before starting, make sure you have a compantible version of ruby installed. This backend was built using:
+### 1. Before starting, make sure you have a compatible version of ruby installed. This backend was built using:
 
       ruby 2.6.1
 
@@ -9,7 +9,7 @@
 
     bundle install
 
-### 4. In order to locally set up the web app, run the following lines from the command line:
+### 4. In order to locally set up the database, run the following lines from the command line:
 
     rails db:create
     rails db:migrate
