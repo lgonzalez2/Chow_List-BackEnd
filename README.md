@@ -9,12 +9,12 @@
 
     bundle install
 
-### 4. In order to locally set up the database, run the following lines from the command line:
+### 3. In order to locally set up the database, run the following lines from the command line:
 
     rails db:create
     rails db:migrate
 
-### 5. Lastly, to finally start the server, run the following from the command line:
+### 4. Lastly, to finally start the server, run the following from the command line:
 
     rails s -p 3001
 
